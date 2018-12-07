@@ -7,12 +7,14 @@ Why I've never had a blog
 I've always wanted to do a blog. Mostly for my sake.
 
 The biggest problem is that I hate most traditional "blogging" platforms.  WYSIWYG editors 
-irritate me.  Blogging on the "web" isn't always that convenient. So,  no blog. 
+irritate me.  Blogging on the "web" isn't always that convenient. 
 
-As a developer my biggest weakness is documentation of the software I write.  For similar
-reasons I hate most blogging platforms,  I find most documentation platforms kludgy and annoying. 
-I hate Wiki's,  largely because it is easy to forget about them and hence they don't get updated. 
-While reading a Wiki is fine,  the interfaces are not what I desire.  
+So,  no blog. 
+
+As a side note, I am a developer and my biggest weakness is documentation of the software I write.  
+For similar reasons I hate most blogging platforms,  I find most documentation platforms kludgy 
+and annoying.  I hate Wiki's,  largely because it is easy to forget about them and hence they don't 
+get updated.  While reading a Wiki is fine,  the interfaces are not what I desire.  
 
 Not documenting software isn't an option.  Without documentation,  people can't learn about
 your work.  In my opinion, developers who don't document or comment in code are doomed to failure.
@@ -39,7 +41,7 @@ How does `readthedocs.org <https://readthedocs.org>`_ fit into this?
 
 `Readthedocs.org <https://readthedocs.org`_ provides a hosting for your documentation.  For example,  the
 `Suricata IDS <https://suricata.readthedocs.org>`_ uses Readthedocs.org.  I've started moving all my
-documentation for `Sagan <https://sagan.readthedocs.org`_ and `Meer <https://meer.readthedocs.org>`_
+documentation for `Sagan <https://sagan.readthedocs.org>`_ and `Meer <https://meer.readthedocs.org>`_
 to Readthedocs.org (Note: my documentation is far from complete and is still a work in progress!). 
 However,  Readthedocs.org is more than just a hosting place for documentation.  It a great and 
 easy (ie - automatic) way for publishing documentation as well. 
