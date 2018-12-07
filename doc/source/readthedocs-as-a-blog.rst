@@ -25,7 +25,7 @@ It is also a high pain in the ass.
 Concepts behind Sphinx/Readthedocs.org
 --------------------------------------
 
-I've noticed a trend of projects using the Sphinx Python Documentation Generator <http://www.sphinx-doc.org>`_.  I decided to give it a try. 
+I've noticed a trend of projects using the Sphinx `Python Documentation Generator <http://www.sphinx-doc.org>`_.  I decided to give it a try. 
 
 The general concept is to keep your software documentation close to the source code.  That is,  make
 documentation part of the development process.  With Sphinx,  you use a very simple and easy to learn
@@ -85,6 +85,7 @@ posts like the one your are reading.  I then cloned it and made a "doc" director
 on my local system the tools I would need to use Sphinx. 
 
 ::
+
    sudo pip install sphinx_rtd_theme
    sudo apt-get install python-dev build-essential python-setuptools
    sudo easy_install sphinx
