@@ -1,2 +1,2 @@
 # beave
-Beave's Readthedocs Blog.
+Beave's Readthedocs.org Blog.
