@@ -20,7 +20,7 @@ Not documenting software isn't an option.  Without documentation,  people can't 
 your work.  In my opinion, developers who don't document or comment in code are doomed to failure.
 While documentation is a "burden", it's also a keep to software being complete and successful
 
-Its also a high pain in the ass. 
+It is also a high pain in the ass. 
 
 Concepts behind Sphinx/Readthedocs.org
 --------------------------------------
@@ -57,4 +57,82 @@ It is several really great concepts tied together.
 
 Building a Sphinx/Readthedocs Blog
 ----------------------------------
+
+
+First off,  I registered a domain.  While "beaves-blog.redthedocs.org" is okay, I wanted something a 
+little more personal.  With that in mind,  I registered "beave.io".  The idea is to redirect traffic
+to the "beave.io" site to my "beaves-blog.readthedocs.org". 
+
+Apache
+~~~~~~
+
+This was pretty simple to accomplish.  I setup Apache to host "beave.io" and in the web sites 
+root,  i placed the following .htaccess file.:
+
+::
+
+   # This will redirect all "beave.io" requests to my "beaves-blog.readthedocs.io".
+   Redirect 301 / https://beaves-blog.readthedocs.io/
+
+
+I also installed a `LetsEncrypt <https://letsencrypt.org/>`_ certificate.  Because, why not. 
+
+Github
+~~~~~~
+
+I then made a new Github repo at https://github.com/beave/beave.  This site will only contain blog
+posts like the one your are reading.  I then cloned it and made a "doc" directory.  I then installed
+on my local system the tools I would need to use Sphinx. 
+
+::
+   sudo pip install sphinx_rtd_theme
+   sudo apt-get install python-dev build-essential python-setuptools
+   sudo easy_install sphinx
+   sphinx-quickstart
+
+
+The "sphinx-quickstart" will setup your "documentation" environment. 
+
+Readthedocs
+~~~~~~~~~~~
+
+Once I have my templates created for my "blog",  I then "pushed" it to Github.com. 
+
+I then pivot to `Readthedocs.org <https://readthedocs.org>`_ and login.  I then added a 
+new repo in Readthedocs that points to https://github.com/beave/beave.  I told Readthedocs
+to "import" and build this page out.   
+
+From here on out,  I only have to do a few commands to push up a new blog any time I want. 
+
+
+Putting it all together
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If I want to make a new blog entry,  this is what I do:
+
+::
+
+   git clone git@github.com:beave/sagan # You could use https://github.com/beave/beave
+   cd beave/doc/source
+   vi index.rst        # Add my new blog entry to the index.rst
+   vi newblowentry.rst # Edit my new blog entry.
+   git commit -a      
+   git push
+
+If I want to see what the blog will look like before a commit/push,  in the "doc" directory
+you can do:
+
+::
+
+   make html
+
+That's it! I can now edit and publish blog entries from any where using the tools I enjoy!
+
+Final Thoughts
+~~~~~~~~~~~~~~
+
+There are some limitations.  For example,  there is no "comment" area.  Since I've gone down this
+road of Readthedocs.org as a blogging platform,  I might as well use Github.com "issues".  If you
+would like to leave a comment about this or any other blog entry,  simple submit a issue at
+https://github.com/beave/beave/issues
 
