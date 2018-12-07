@@ -1,5 +1,5 @@
-Sagan User Guide
-================
+Beave's Blog Posts
+==================
 
 .. toctree::
    :numbered:
