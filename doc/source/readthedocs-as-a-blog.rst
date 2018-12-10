@@ -1,5 +1,5 @@
-Readthedocs.org as a blog
-=========================
+Readthedocs.org as a blog [2018/12/10]
+======================================
 
 Why I've never had a blog
 -------------------------
@@ -139,9 +139,11 @@ That's it! I can now edit and publish blog entries from any where using the tool
 Final Thoughts
 ~~~~~~~~~~~~~~
 
-There are some limitations. For example,  there is no "comment" area.  Since I've gone down this
-road of Readthedocs.org as a blogging platform,  I might as well use Github.com "issues".  If you
-would like to leave a comment about this or any other blog entry,  simple submit a issue at
-https://github.com/beave/beave/issues
+There are some limitations to this approach.  Readthedocs.org doesn't have any statistics about who 
+has viewed your pages.  
 
+There isn't a "comment" area. Since I've gone down the road of using Readthedocs.org as a 
+blogging platform,  I might as well use Github.com "issues".  If you would like to leave a 
+comment about this or any other blog entry,  submit an "issue" at
+https://github.com/beave/beave/issues
 
