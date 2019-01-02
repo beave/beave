@@ -34,7 +34,7 @@ What is astonishing to me is that many security minded folks don't seem to reliz
 know this?  Because attackers have told us.  Case and point,  "Hacking Team Hack" 
 (https://pastebin.com/0SNSvyjJ).
 
-:::
+::
 
    "I didn't want to make the police's work any easier by relating my hack of
    Hacking Team with other hacks I've done or with names I use in my day-to-day
